@@ -44,7 +44,7 @@ end
 
 @testset "Mortality with Resistance grid" begin
     
-    phenotyperule = Cell{:phenotype, :phenotype}() do state 
+    phenotyperule = Cell{:phenotype, :phenotype}() do data, state, I
         return state * 10
     end 
     
